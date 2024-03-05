@@ -8,55 +8,55 @@ def question1():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = 1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = """ Agglomerative hierarchical clustering is more flexible in terms of cluster shape and can thus better accommodate outliers than k-means, which assumes clusters to be spherical and often assigns outliers to a cluster based on the nearest mean, potentially skewing the cluster's attributes."""
 
     # type: bool (True/False)
-    answers["(b)"] = 1
+    answers["(b)"] = True
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = """ K-means clustering can produce different clusterings on different runs because it starts with randomly chosen centroids, affecting the final clusters. In contrast, agglomerative hierarchical clustering procedures are deterministic, producing the same clustering every time when given the same data set and parameters, as they build clusters step by step based on a clear set of rules without randomness in the initial conditions."""
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = False
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = """While K-means is generally more efficient than agglomerative hierarchical clustering in terms of time and memory, it's not correct to label it the most efficient algorithm universally. Efficiency varies with the task and dataset."""
 
     # type: bool (True/False)
-    answers["(d)"] = -1
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = """SSE is decreased when splitting; for the same amount and configuration of points we have now two centroids. It allows points to be closer to a centroid, thus reducing the total squared distance within the cluster. This process typically results in a more refined clustering where the internal cohesion of each cluster is increased, and the overall variation within clusters, as measured by SSE, is decreased."""
 
     # type: bool (True/False)
-    answers["(e)"] = 1
+    answers["(e)"] = True
 
     # type: explanatory string (at least four words)
     answers["(e) explain"] = """In K-means clustering, a decrease in SSE (Sum of Squared Errors) indicates that data points are closer to their respective centroids, which directly implies an increase in cluster cohesion."""
 
     # type: bool (True/False)
-    answers["(f)"] = 1
+    answers["(f)"] = True
 
     # type: explanatory string (at least four words)
     answers["(f) explain"] = """In K-means clustering, an increase in SSB (the Between-Cluster Sum of Squares) indicates that clusters are further apart from each other, which directly implies an increase in cluster separation."""
 
     # type: bool (True/False)
-    answers["(g)"] = -1
+    answers["(g)"] = False
 
     # type: explanatory string (at least four words)
     answers["(g) explain"] = """Improving cohesion by reducing SSE does not necessarily improve separation (increase SSB) in K-means, as these metrics can be influenced by changes in cluster assignments and centroids, yet their relationship is complex and context-dependent."""
 
     # type: bool (True/False)
-    answers["(h)"] = 1
+    answers["(h)"] = True
 
     # type: explanatory string (at least four words)
     answers["(h) explain"] = """For a fixed dataset and number of clusters, the sum of SSE (within-cluster variance) and SSB (between-cluster variance) remains constant, reflecting the partitioning of total variance."""
 
     # type: bool (True/False)
-    answers["(i)"] = 1
+    answers["(i)"] = True
 
     # type: explanatory string (at least four words)
     answers["(i) explain"] = """An increase in cohesion, by reducing within-cluster variance (SSE), can indirectly lead to an increase in separation (SSB), as the total variance is partitioned between SSE and SSB, maintaining a balance."""
@@ -71,19 +71,19 @@ def question2():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = 1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = """The clusters appear to be way too distant to attract points from the another."""
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = False
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = """The resulting clusters will have points from both shaded regions as they are too close to each other and not in circular or global shape. KMeans doesn't work well with non globular shapes and this is a prime example."""
 
     # type: bool (True/False)
-    answers["(c)"] = 1
+    answers["(c)"] = True
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = """The central centroid is too far away from the other points and will attract none, so it will contain an empty cluster."""
