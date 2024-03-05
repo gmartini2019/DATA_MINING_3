@@ -161,16 +161,16 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = {'GROUP A', 'GROUP B'}
+    answers["(a)"] = {'Group A', 'Group B'}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = {"""Group A and B have their closest minimum distance. The rightmost GROUP A element and leftmost GROUPB element."""}
+    answers["(a) explain"] = """Group A and B have their closest minimum distance. The rightmost GROUP A element and leftmost GROUPB element."""
 
     # type: set
-    answers["(b)"] = {'GROUP A', 'GROUP C'}
+    answers["(b)"] = {'Group A', 'Group C'}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = {"""Group A's middle element and Group C's bottomost element have the best max link distance. It is too big between A and B's extremes and B's extreme is just too far away"""}
+    answers["(b) explain"] = """Group A's middle element and Group C's bottomost element have the best max link distance. It is too big between A and B's extremes and B's extreme is just too far away"""
 
     return answers
 
